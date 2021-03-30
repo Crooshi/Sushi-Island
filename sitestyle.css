@@ -165,3 +165,57 @@ padding-top: 16%;
     justify-content: center;
 }
 
+/* INSCRIPTION */
+.bg-form{
+  background-image: url("./img/bg-inscription.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-form h2{
+    font-size: 55px;
+    font-weight: 800;
+    color: white;
+}
+
+.container-form{
+    background-color : #808080B5;
+    height: 70%;
+    width: 45%;
+}
+
+.container-form form{
+    margin-top: 10%;
+}
+
+.form-input, .form-btn {    
+    height: 100%;
+    margin-top: 0 auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+} 
+
+.form-input input{
+    width: 80% !important;
+}
+
+.form-btn input{
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 50% !important;
+    color: black;
+    padding: 8px 20px;
+    border: none;
+    text-align: center;
+    border-color: white;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
