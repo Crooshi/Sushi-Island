@@ -5,13 +5,28 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
-a {
-    text-decoration: none !important;
-    color: #5d5d5d !important;
-}
 
 li{
     list-style: none;
+}
+/* NavBar */
+.navbar{
+	background-color: #222222;
+	padding: 15px 20px !important;
+
+}
+
+.nav-item-right{
+	justify-content: flex-end;
+}
+/*  section header*/
+
+nav a {
+	text-decoration: none;
+	letter-spacing: 4px;
+	font-size: 15px;
+	margin: 0 10px;
+	color: #fff;
 }
 
 .parallax {
@@ -77,6 +92,10 @@ li{
   cursor: pointer;
 }
 
+.card-btn{
+    text-decoration: none !important;
+    color: #5d5d5d !important;
+}
 
 .card-item :hover{
  background-color: #ffb03b;
@@ -102,6 +121,8 @@ padding-top: 16%;
     background-color: #fff;
     font-weight: bold;
     font-size: 18px;
+    text-decoration: none !important;
+    color: #5d5d5d !important;
 }
 .footer{
     width: 90%;
