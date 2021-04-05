@@ -8,7 +8,7 @@
     <!--Lien avec CSS-->
     <link rel="stylesheet" href="./sitestyle.css">
     <!--Librairie d'icones-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -18,58 +18,113 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="./accueil.html">Sushi Island</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
+        </button>
         <div class="collapse navbar-collapse nav-item-right" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="./accueil.html">Accueil <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./products.html">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="./connexion.html">Se connecter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./inscription.html">Création de compte</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">Autre</a>
-            </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./accueil.html">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./products.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./connexion.html">Se connecter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./inscription.html">Création de compte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Autre</a>
+                </li>
             </ul>
         </div>
     </nav>
-    <section class="connexion">
-        <div class="title-form">
-            <h2>Identifiez-vous</h2>
-        </div>
-        <div class="connexion-form">
-            <form name="connexion-form" method="POST">
-                <h3>Déjà client ?</h3>
-                <br>
-                <p>Adresse e-mail</p>
-                <div class="form-input">
-                    <input type="email" class="form-control" name="email" placeholder="Votre e-mail"/>
+    <!-- END NAVBAR -->
+    
+    <section class="food-menu">
+        <h2 class="food-menu-heading">
+            Food Menu
+        </h2>
+
+        <ul class="nav justify-content-center bg-light">
+            <li class="nav-item px-5">
+                <a class="nav-link" href="#">Entrées</a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="./products.html">Plats froids</a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="#">Plats chauds</a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="#">Desserts</a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="#">Boissons</a>
+            </li>
+        </ul>
+
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="img\coca.png" alt="">
                 </div>
-                <p>Mot de passe</p>
-                <div class="form-input">
-                    <input type="password" class="form-control" name="mdp" placeholder="Votre mot de passe"/>
+                <div class="food-description">
+                    <h2 class="food-title">Coca Cola</h2>
+                    <p class="food-price">Prix : 5 €</p>
                 </div>
-                <br>
-                <div class="form-btn">
-                    <input type="submit" name="valider" value="Valider"/>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="img\fanta.png" alt="">
                 </div>
-                <br><hr style="height:1px; width:80%; margin: auto; color: black;"><br>
-                <h3>Nouveau client ?</h3>
-                <br>
-                <div class="form-btn">
-                    <input type="button" value="Créer un compte" onclick="window.location='inscription.html';"/>
+                <div class="food-description">
+                    <h2 class="food-title">Fanta</h2>
+                    <p class="food-price">Prix : 5 €</p>
                 </div>
-            </form>
+            </div>
+            <div class="food-menu-item">
+                <div class="img\icetea.jpg">
+                    <img src="img\orangina.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Orangina</h2>
+                    <p class="food-price">Prix : 5 €</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="img\icetea.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Ice Tea</h2>
+                    <p class="food-price">Prix : 5 €</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="img\evian.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Evian</h2>
+                    <p class="food-price">Prix : 5 €</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="img\perrier.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Perrier</h2>
+                    <p class="food-price">Prix : 5 €</p>
+                </div>
+            </div>
         </div>
     </section>
 
