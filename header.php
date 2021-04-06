@@ -31,7 +31,7 @@
                     <a class="nav-link" href="./accueil.php">Accueil <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Menu</a>
+                    <a class="nav-link" href="./products.php">Menu</a>
                 </li>
                 <?php
                     if(isset($_SESSION["id_user"])){
