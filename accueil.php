@@ -1,45 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> Sushi Island</title>
-		<!--Lien avec CSS-->
-		<link rel="stylesheet" href="./sitestyle.css">
-		<!--Librairie d'icones-->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-		<!--Feuille de style BOOTSTRAP-->
-    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	</head>
-	<body>
-    <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="./accueil.html">Sushi Island</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse nav-item-right" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./accueil.html">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="./connexion.html">Se connecter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./inscription.html">Creation de compte</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Autre</a>
-                </li>
-                </ul>
-            </div>
-        </nav>
+<?php 
+    include_once 'header.php';
+?>  
  		<section class="parallax">
       		<div data-aos="fade-up" class="textImg">
        			<h1>Sushi Island</h1>
@@ -106,54 +67,6 @@
 		  <h1>Lorem ipsum dolor sit amet consectetur.</h1>
       <div class="para-btn"> <a href="">Commandez</a></div>
 	  </section>
-     <!--FOOTER-->
-    <section class="horaire container"> 
-     <div class="row footer">
-      <div class="col-md-4">
-          <div class="ouverture">
-          <h4>Horaires</h4>
-          <div class="details">
-            <ul class="flex-li">
-              <li> <span class="jour">Lundi</span><span  class="heure">11h-22h</span></li>
-              <li> <span class="jour">Mardi</span><span  class="heure">11h-22h</span></li>
-              <li> <span class="jour">Mercredi</span><span  class="heure">11h-22h</span></li>
-              <li> <span class="jour">Jeudi</span><span class="heure">11h-22h</span></li>
-              <li> <span class="jour">Vendredi</span><span  class="heure">11h-23h</span></li>
-              <li> <span class="jour">Samedi</span><span  class="heure">11h-23h</span></li>
-              <li> <span class="jour">Dimanche</span><span  class="heure">Fermé</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="contact">
-         <h4>Nous contacter</h4>
-         <div class="details">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis velit corporis nulla nobis. </p>
-              <ul class="flex-li">
-                  <li> <span> Sushi Island </span></li>
-                  <li> <span>10 rue saint honoré</span></li>
-                  <li><i class="fas fa-phone"></i> <span class="tel"><b>Téléphone :</b> +33 1 30456758 </span> </li>
-                  <li><i class="fas fa-envelope"></i> <span class="mel"><b>Email : </b> contact@sushi-island.com  </span> </li>
-                </ul>
-          </div>
-          </div>
-      </div>
-      </div>
-    </section>
-    <section>
-      <div class="copyright"> 
-        <p>Copyright © 2021 Sushi Island. All rights reserved</p>
-      </div>
-    </section>
-    <!--END FOOTER-->
-	</body>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  		<!--BOOTSTRAP-->
-	  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</html>
+<?php 
+    include_once 'footer.php';
+?>  
