@@ -32,60 +32,60 @@
         <div class="food-menu-container container">
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\boisson-coca.jpg" alt="">
+                    <img src="img\glace1-fraise.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Coca-Cola</h2>
+                    <h2 class="food-title">Glace à la fraise</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
                     <p class="food-price">Prix : 5 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\boisson-fanta.jpg" alt="">
+                    <img src="img\glace2-chocolat.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Fanta</h2>
+                    <h2 class="food-title">Glace au chocolat</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
                     <p class="food-price">Prix : 5 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\boisson-oranginaa.jpg" alt="">
+                    <img src="img\glace3-pistache.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Orangina</h2>
+                    <h2 class="food-title">Glace à la pistache</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
                     <p class="food-price">Prix : 5 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\boisson-icetea.jpg" alt="">
+                    <img src="img\glace4-citron.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Ice Tea</h2>
+                    <h2 class="food-title">Glace au citron</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
                     <p class="food-price">Prix : 5 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\boisson-evian.jpg" alt="">
+                    <img src="img\glace5-mangue.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Evian</h2>
+                    <h2 class="food-title">Glace à la mangue</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
                     <p class="food-price">Prix : 5 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\boisson-perrier.jpg" alt="">
+                    <img src="img\glace6-noisette.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Perrier</h2>
+                    <h2 class="food-title">Glace à la noisette</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
                     <p class="food-price">Prix : 5 €</p>
                 </div>
