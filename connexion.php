@@ -19,7 +19,7 @@
                 <div class="form-btn">
                     <button type="submit" name="submit">Valider</button>
                 </div>
-               <!--  <br><hr style="height:1px; width:80%; margin: auto; color: black;"><br>
+               <!-- <br><hr style="height:1px; width:80%; margin: auto; color: black;"><br>
                 <h3>Nouveau client ?</h3>
                 <div class="form-btn">
                     <input type="button" value="Créer un compte" onclick="window.location='./inscription.php';"/>

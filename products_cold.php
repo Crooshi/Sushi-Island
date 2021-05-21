@@ -32,62 +32,62 @@
         <div class="food-menu-container container">
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\glace1-fraise.jpg" alt="">
+                    <img src="img/menu1.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Glace à la fraise</h2>
+                    <h2 class="food-title">Menu Item 1</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 3 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\glace2-chocolat.jpg" alt="">
+                    <img src="img/menu2.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Glace au chocolat</h2>
+                    <h2 class="food-title">Menu Item 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 3 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\glace3-pistache.jpg" alt="">
+                    <img src="img/menu3.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Glace à la pistache</h2>
+                    <h2 class="food-title">Menu Item 3</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 3 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\glace4-citron.jpg" alt="">
+                    <img src="img/menu4.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Glace au citron</h2>
+                    <h2 class="food-title">Menu Item 4</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 3 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\glace5-mangue.jpg" alt="">
+                    <img src="img/menu5.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Glace à la mangue</h2>
+                    <h2 class="food-title">Menu Item 5</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 3 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\glace6-noisette.jpg" alt="">
+                    <img src="img/menu6.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Glace à la noisette</h2>
+                    <h2 class="food-title">Menu Item 6</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 3 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
         </div>
