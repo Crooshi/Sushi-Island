@@ -1,7 +1,11 @@
 <?php
     include_once 'header.php';
 ?>
-    
+
+<style>
+    <?php include 'sitestyle.css';?>
+</style>
+
     <section class="food-menu">
         <h2 class="food-menu-heading">
             Food Menu
@@ -9,75 +13,81 @@
 
         <ul class="nav justify-content-center bg-light">
             <li class="nav-item px-5">
-                <a class="nav-link" href="#">Entrées</a>
+                <a class="nav-link" href="./entrees.php">Entrées</a>
             </li>
             <li class="nav-item px-5">
-                <a class="nav-link" href="./products.html">Plats froids</a>
+                <a class="nav-link" href="./products_cold.php">Plats froids</a>
             </li>
             <li class="nav-item px-5">
-                <a class="nav-link" href="#">Plats chauds</a>
+                <a class="nav-link" href="./products_hot.php">Plats chauds</a>
             </li>
             <li class="nav-item px-5">
-                <a class="nav-link" href="#">Desserts</a>
+                <a class="nav-link" href="./desserts.php">Desserts</a>
             </li>
             <li class="nav-item px-5">
-                <a class="nav-link" href="#">Boissons</a>
+                <a class="nav-link" href="./boissons.php">Boissons</a>
             </li>
         </ul>
 
         <div class="food-menu-container container">
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\coca.png" alt="">
+                    <img src="img\boisson-coca.jpg" alt="">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-title">Coca Cola</h2>
-                    <p class="food-price">Prix : 5 €</p>
+                    <h2 class="food-title">Coca-Cola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
+                    <p class="food-price">Prix : 2 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\fanta.png" alt="">
+                    <img src="img\boisson-fanta.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Fanta</h2>
-                    <p class="food-price">Prix : 5 €</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
+                    <p class="food-price">Prix : 2 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
-                <div class="img\icetea.jpg">
-                    <img src="img\orangina.jpg" alt="">
+                <div class="food-image">
+                    <img src="img\boisson-oranginaa.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Orangina</h2>
-                    <p class="food-price">Prix : 5 €</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
+                    <p class="food-price">Prix : 2 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\icetea.jpg" alt="">
+                    <img src="img\boisson-icetea.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Ice Tea</h2>
-                    <p class="food-price">Prix : 5 €</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
+                    <p class="food-price">Prix : 2 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\evian.jpg" alt="">
+                    <img src="img\boisson-evian.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Evian</h2>
-                    <p class="food-price">Prix : 5 €</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
+                    <p class="food-price">Prix : 2 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img\perrier.jpg" alt="">
+                    <img src="img\boisson-perrier.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Perrier</h2>
-                    <p class="food-price">Prix : 5 €</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
+                    <p class="food-price">Prix : 2 €</p>
                 </div>
             </div>
         </div>

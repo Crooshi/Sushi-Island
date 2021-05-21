@@ -13,13 +13,13 @@
 
         <ul class="nav justify-content-center bg-light">
             <li class="nav-item px-5">
-                <a class="nav-link" href="#">Entrées</a>
+                <a class="nav-link" href="./entrees.php">Entrées</a>
             </li>
             <li class="nav-item px-5">
-                <a class="nav-link" href="./products.php">Plats froids</a>
+                <a class="nav-link" href="./products_cold.php">Plats froids</a>
             </li>
             <li class="nav-item px-5">
-                <a class="nav-link" href="#">Plats chauds</a>
+                <a class="nav-link" href="./products_hot.php">Plats chauds</a>
             </li>
             <li class="nav-item px-5">
                 <a class="nav-link" href="./desserts.php">Desserts</a>
@@ -32,7 +32,7 @@
         <div class="food-menu-container container">
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu1.jpg" alt="">
+                    <img src="img\entree1-gyoza-porc.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 1</h2>
@@ -42,7 +42,7 @@
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu2.jpg" alt="">
+                    <img src="img\entree2-gyoza-poulet.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 2</h2>
@@ -52,7 +52,7 @@
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu3.jpg" alt="">
+                    <img src="img\entree3-tempura.jpeg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 3</h2>
@@ -62,7 +62,7 @@
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu4.jpg" alt="">
+                    <img src="img\entree4-salade-chou.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 4</h2>
@@ -72,7 +72,7 @@
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu5.jpg" alt="">
+                    <img src="img\entree5-miso.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 5</h2>
@@ -82,7 +82,7 @@
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu6.jpg" alt="">
+                    <img src="img\entree6-riz.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 6</h2>
@@ -93,6 +93,6 @@
         </div>
     </section>
 
- <?php
+<?php
     include_once 'footer.php';
 ?>

@@ -13,13 +13,13 @@
 
         <ul class="nav justify-content-center bg-light">
             <li class="nav-item px-5">
-                <a class="nav-link" href="#">Entrées</a>
+                <a class="nav-link" href="./entrees.php">Entrées</a>
             </li>
             <li class="nav-item px-5">
-                <a class="nav-link" href="./products.php">Plats froids</a>
+                <a class="nav-link" href="./products_cold.php">Plats froids</a>
             </li>
             <li class="nav-item px-5">
-                <a class="nav-link" href="#">Plats chauds</a>
+                <a class="nav-link" href="./products_hot.php">Plats chauds</a>
             </li>
             <li class="nav-item px-5">
                 <a class="nav-link" href="./desserts.php">Desserts</a>
@@ -32,67 +32,47 @@
         <div class="food-menu-container container">
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu1.jpg" alt="">
+                    <img src="img\menuc1.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 1</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 5 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu2.jpg" alt="">
+                    <img src="img\menuc2.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 5 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu3.jpg" alt="">
+                    <img src="img\menuc3.jpeg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 3</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 5 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
             <div class="food-menu-item">
                 <div class="food-image">
-                    <img src="img/menu4.jpg" alt="">
+                    <img src="img\menuc4.jpg" alt="">
                 </div>
                 <div class="food-description">
                     <h2 class="food-title">Menu Item 4</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 5 €</p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-image">
-                    <img src="img/menu5.jpg" alt="">
-                </div>
-                <div class="food-description">
-                    <h2 class="food-title">Menu Item 5</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 5 €</p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-image">
-                    <img src="img/menu6.jpg" alt="">
-                </div>
-                <div class="food-description">
-                    <h2 class="food-title">Menu Item 6</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, praesentium.</p>
-                    <p class="food-price">Prix : 5 €</p>
+                    <p class="food-price">Prix : 10 €</p>
                 </div>
             </div>
         </div>
     </section>
 
- <?php
+<?php
     include_once 'footer.php';
 ?>

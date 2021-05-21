@@ -4,6 +4,7 @@
  		<section class="parallax">
       		<div data-aos="fade-up" class="textImg">
        			<h1>Sushi Island</h1>
+<<<<<<< HEAD
         		 <?php
             if(isset($_SESSION["id_user"])){
                         echo "<h4>Bienvenue " . $_SESSION['prenom']."</h4>";
@@ -13,6 +14,9 @@
                         
                     }
                 ?> 
+=======
+        		<h4>Bienvenue dans l'univers des maitres sushis</h4>
+>>>>>>> 277f0fb0e2975279ac32b6e1d7364ebfc554a69a
       		</div>
     	</section>
 		<section class="service">
