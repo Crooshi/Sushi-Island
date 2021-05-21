@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse nav-item-right" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./accueil.php">Accueil <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./index.php">Accueil <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./products.php">Menu</a>
@@ -36,7 +36,7 @@
                 <?php
                     if(isset($_SESSION["id_user"])){
                         echo "<li class='nav-item'> <a class='nav-link' href='./profil.php'>Mon Profil</a> </li>";
-                        echo "<li class='nav-item'> <a class='nav-link' href='./deconnexion.php'>Se déconnecter</a> </li>";
+                        echo "<li class='nav-item'> <a class='nav-link' href='includes/deconnexion.inc.php'>Se déconnecter</a> </li>";
                     }
                     else{
                          echo "<li class='nav-item'> <a class='nav-link' href='./connexion.php'>Se connecter</a></li>";

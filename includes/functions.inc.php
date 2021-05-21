@@ -33,9 +33,9 @@
             exit();
         }
 
-        $hashMdp = password_hash($mdp, PASSWORD_DEFAULT);
+        /* $hashMdp = password_hash($mdp, PASSWORD_DEFAULT); */
 
-        mysqli_stmt_bind_param($stmt, "sssssss", $nom, $prenom, $email, $hashMdp, $adresse, $ville, $cp);
+        mysqli_stmt_bind_param($stmt, "sssssss", $nom, $prenom, $email, $mdp, $adresse, $ville, $cp);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
         header("location: ../inscription.php?error=none" );
@@ -50,14 +50,14 @@
             exit();
        }
 
-       $mdpHash = $userExists['mdp'];
-       $checkMdp = password_verify($mdp, $mdpHash);
+      /*  $mdpHash = $userExists['mdp'];
+       $checkMdp = password_verify($mdp, $mdpHash); */
 
-       if (password_verify($mdp, $mdpHash) === false){
+       if ($userExists['mdp'] !== $mdp ){
            header("location: ../connexion.php?error=mauvaismdp");
             exit();
        }
-       else if($checkMdp === true){
+       else if($userExists['mdp'] === $mdp ){
             session_start();
             $_SESSION["email"] = $userExists["email"];
             header("location: ../accueil.php");

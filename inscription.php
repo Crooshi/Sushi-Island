@@ -8,43 +8,58 @@
             <div class="container-form">
                 <form name="inscription" action="includes/inscription.inc.php" method="POST">
                     <div class="form-input">
-                        <input type="text" class="form-control" name="nom" placeholder="Votre nom" required/>
+                        <input type="text" class="form-control" name="nom" placeholder="Votre nom" />
                     </div>
                     <div class="form-input">
-                        <input type="text" class="form-control" name="prenom" placeholder="Votre prénom" required/>
+                        <input type="text" class="form-control" name="prenom" placeholder="Votre prénom" />
                     </div>
                     <div class="form-input">
-                        <input type="email" class="form-control" name="email" placeholder="Votre e-mail" required/>
+                        <input type="email" class="form-control" name="mail" placeholder="Votre e-mail" />
                     </div>
                     <div class="form-input">
-                        <input type="password" class="form-control" name="mdp" placeholder="Votre mot de passe" required/>
+                        <input type="email" class="form-control" placeholder="Confirmez votre mail" id="mail2" name="mail2" />
                     </div>
                     <div class="form-input">
-                        <input type="text" class="form-control" name="adresse" placeholder="Votre adresse" required/>
+                        <input type="password" class="form-control" name="mdp" placeholder="Votre mot de passe" />
+                    </div>
+                    <div class="form-input">
+                        <input type="password" class="form-control"  placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" />
+                    </div>
+                    <div class="form-input">
+                        <input type="text" class="form-control" name="adresse" placeholder="Votre adresse" />
                     </div>
                    <div class="form-input">
-                        <input type="text" class="form-control" name="ville" placeholder="Ville" required/>
+                        <input type="text" class="form-control" name="ville" placeholder="Ville" />
                     </div>
                     <div class="form-input">
-                        <input type="text" class="form-control" name="code_postal" placeholder="Code Postal" required/>
+                        <input type="text" class="form-control" name="code_postal" placeholder="Code Postal" />
                     </div>
                     <div class="form-btn">
-                        <button type="submit" name="submit">Valider</button>
+                        <input type="submit" name="forminscription" value="Valider" />
                     </div>
                 </form>
-                 <?php
-                if(isset($_GET["error"])){
-                    if ($_GET["error"] == "stmtfailed"){
-                        echo "<p> Il y a quelque chose qui ne va pas, réessayer ! </p>";
+                <?php
+                if(isset($_GET["erreur"])){
+                    if($_GET["erreur"] == "adresseinvalide"){
+                        echo "<p class='erreur-message'> Votre adresse mail n'est pas valide !</p> ";
                     }
-                    else if ($_GET["error"] == "none"){
-                        echo "<h1> Vous êtes inscrit ! </h1>";
+                    else if($_GET["erreur"] == "userExist"){
+                        echo "<p class='erreur-message'>Adresse mail déjà utilisée !</p>";
+                    }   
+                    else if($_GET["erreur"] == "mdperreur"){
+                        echo "<p class='erreur-message'>Vos mots de passes ne correspondent pas !</p>";
                     }
-                    else if ($_GET["error"] == "userexist"){
-                        echo "<h1> Compte client déjà existant ! </h1>";
+                    else if($_GET["erreur"] == "mailerreur"){
+                        echo "<p class='erreur-message'>Vos adresses mail ne correspondent pas !</p>";
                     }
-                } 
-            ?>
+                    else if($_GET["erreur"] == "champsmanquant"){
+                        echo "<p class='erreur-message'>Tous les champs doivent être complétés !</p>";
+                    }  
+                    else if($_GET["erreur"] == "none"){
+                        echo "<p class='erreur-message'>Vous êtes inscrits !</p>";
+                    }   
+                }
+                ?>
             </div>
            
         </section>

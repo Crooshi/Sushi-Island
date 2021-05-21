@@ -241,6 +241,12 @@ padding-top: 16%;
     transition-duration: 0.4s;
 }
 
+.erreur-message{
+    color: red;
+    font-size: 18px;
+    font-weight: 800;
+}
+
 /* CONNEXION */
 .connexion{
     background-image: url(./img/bg-connexion.jpg);

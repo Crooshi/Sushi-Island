@@ -10,29 +10,23 @@
                 <h3>Déjà client ?</h3>
                 <p>Adresse e-mail</p>
                 <div class="form-input">
-                    <input type="email" class="form-control" name="email" placeholder="Votre e-mail" required />
+                    <input type="email" class="form-control" name="mail" placeholder="Votre e-mail" required />
                 </div>
                 <p>Mot de passe</p>
                 <div class="form-input">
                     <input type="password" class="form-control" name="mdp" placeholder="Votre mot de passe" required/>
                 </div>
                 <div class="form-btn">
-                    <button type="submit" name="submit">Valider</button>
+                    <input type="submit" name="formconnexion" value="Se connecter" />
                 </div>
-               <!--  <br><hr style="height:1px; width:80%; margin: auto; color: black;"><br>
+               <br><hr style="height:1px; width:80%; margin: auto; color: black;"><br>
                 <h3>Nouveau client ?</h3>
                 <div class="form-btn">
                     <input type="button" value="Créer un compte" onclick="window.location='./inscription.php';"/>
-                </div> -->
+                </div>
             </form>
         </div>
-         <?php
-                if(isset($_GET["error"])){
-                    if ($_GET["error"] == "wronglogin"){
-                        echo "<p> Le mot de passe ou l'identifiant est incorect  </p>";
-                    }
-                } 
-            ?>
+        
     </section>
 
 <?php 
