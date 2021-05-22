@@ -18,10 +18,13 @@ session_start();
                 $_SESSION['mail'] = $userinfo['mail'];
                 header("Location: ../index.php?id=".$_SESSION['id_user']);
             } else {
-               echo "Mauvais mail ou mot de passe !";
+               header("Location: ../connexion.php?erreur=wrongconnect");
+                exit(); 
             }
         } else {
-           echo "Tous les champs doivent être complétés !";
+            header("Location: ../connexion.php?erreur=champsmanquant");
+            exit(); 
+           
         }
     }
     

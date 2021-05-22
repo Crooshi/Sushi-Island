@@ -19,11 +19,20 @@
                 <div class="form-btn">
                     <input type="submit" name="formconnexion" value="Se connecter" />
                 </div>
-<<<<<<< HEAD
+                <div>
+                <?php
+                if(isset($_GET["erreur"])){
+                    if($_GET["erreur"] == "wrongconnect"){
+                        echo "<p class='erreur-message'> Mauvais mail ou mot de passe !</p> ";
+                    }
+                    else if($_GET["erreur"] == "champsmanquant"){
+                        echo "<p class='erreur-message'>Tous les champs doivent être complétés !</p>";
+                    }  
+                }
+                ?>
+                </div>
+    
                <br><hr style="height:1px; width:80%; margin: auto; color: black;"><br>
-=======
-               <!-- <br><hr style="height:1px; width:80%; margin: auto; color: black;"><br>
->>>>>>> 277f0fb0e2975279ac32b6e1d7364ebfc554a69a
                 <h3>Nouveau client ?</h3>
                 <div class="form-btn">
                     <input type="button" value="Créer un compte" onclick="window.location='./inscription.php';"/>

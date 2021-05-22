@@ -24,7 +24,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=site', 'Lea', 'test');
                   if($mdp == $mdp2) {
                      $insertmbr = $bdd->prepare("INSERT INTO utilisateur(nom, prenom, mail, mdp, adresse, ville, code_postal) VALUES(?, ?, ?, ?, ?, ?, ?)");
                       $insertmbr->execute(array($nom, $prenom, $mail, $mdp, $adresse, $ville, $code_postal));
-                      echo "Votre compte a bien été créer";
+                     header("Location: ../inscription.php?erreur=none");
+                      exit();
                   } else {
                       header("Location: ../inscription.php?erreur=mdperreur");
                       exit();
