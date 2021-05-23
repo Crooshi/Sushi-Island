@@ -31,7 +31,7 @@
                     <a class="nav-link" href="./index.php">Accueil <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./products_cold.php">Menu</a>
+                    <a class="nav-link" href="./categorie.php">Menu</a>
                 </li>
                 <?php
                     if(isset($_SESSION["id_user"])){
@@ -44,7 +44,7 @@
                     }
                 ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Autre</a>
+                    <a class="nav-link" href="./addproduct.php">Panier</a>
                 </li>
                 </ul>
             </div>

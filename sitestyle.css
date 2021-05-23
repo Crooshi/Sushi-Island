@@ -283,6 +283,8 @@ padding-top: 16%;
     text-align: center;
 }
 
+/*MENU*/
+
 .food-menu-heading{
     margin-top: 3%;
     margin-bottom: 3%;
@@ -296,7 +298,7 @@ padding-top: 16%;
 .food-menu-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0px 30px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 .nav.justify-content-center.bg-light li a{
