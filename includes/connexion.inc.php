@@ -1,6 +1,8 @@
 <?php
 session_start();
-    $bdd = new PDO('mysql:host=localhost;dbname=site', 'Lea', 'test');
+/*     $bdd = new PDO('mysql:host=localhost;dbname=site', 'Lea', 'test');
+ */    
+    require 'db.inc.php';
 
     if(isset($_POST['formconnexion'])) {
         $mailconnect = htmlspecialchars($_POST['mail']);

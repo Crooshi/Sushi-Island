@@ -1,7 +1,8 @@
 <?php
 
-$bdd = new PDO('mysql:host=localhost;dbname=site', 'Lea', 'test');
-
+/* $bdd = new PDO('mysql:host=localhost;dbname=site', 'Lea', 'test');
+ */
+require 'db.inc.php';
  if(isset($_POST['forminscription']))
  {
     if(!empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2']) AND !empty($_POST['adresse']) AND !empty($_POST['ville']) AND !empty($_POST['code_postal'])) 
