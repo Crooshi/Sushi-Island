@@ -1,5 +1,5 @@
  <?php
-/*     $host = "localhost"; 
+/*  $host = "localhost"; 
     $user = "Lea"; 
     $mdp = "test"; 
     $bdd = "site"; 

@@ -16,6 +16,7 @@ session_start();
                 $_SESSION['id_user'] = $userinfo['id_user'];
                 $_SESSION['nom'] = $userinfo['nom'];
                 $_SESSION['prenom'] = $userinfo['prenom'];
+                $_SESSION['statut'] = $userinfo['statut'];
 
                 $_SESSION['mail'] = $userinfo['mail'];
                 header("Location: ../index.php?id=".$_SESSION['id_user']);

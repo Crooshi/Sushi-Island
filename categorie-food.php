@@ -1,7 +1,6 @@
 <?php
     include_once 'header.php';
     require 'includes/db.inc.php';   
-
 ?>
     <ul class="nav justify-content-center bg-light">
         <?php 
@@ -41,7 +40,7 @@
                                 <h2 class="food-title"><?= $p['titre']?></h2>
                                 <p><?= $p['description']?></p>
                                 <p class="food-price">Prix : <?= $p['prix']?> €</p>
-                                <a href=".addproduct.php?<?= $p["id_produit"] ?>" class="btn btn-primary">Commandez maintenant</a>
+                                <a href="addpanier.php?id=<?= $p["id_produit"] ?>" class="btn btn-primary">Ajouter au panier </a>
                             </div>
                 </div>             
             </div>

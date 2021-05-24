@@ -38,6 +38,7 @@
                         echo "<li class='nav-item'> <a class='nav-link' href='./profil.php'>Mon Profil</a> </li>";
                         echo "<li class='nav-item'> <a class='nav-link' href='includes/deconnexion.inc.php'>Se déconnecter</a> </li>";
                     }
+                   
                     else{
                          echo "<li class='nav-item'> <a class='nav-link' href='./connexion.php'>Se connecter</a></li>";
                          echo "<li class='nav-item'> <a class='nav-link' href='./inscription.php'>Créer un compte</a></li>";
@@ -45,6 +46,9 @@
                 ?>
                 <li class="nav-item">
                     <a class="nav-link" href="./addproduct.php">Panier</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./admin.php">Admin</a>
                 </li>
                 </ul>
             </div>

@@ -1,8 +1,7 @@
 <?php
+    require 'db.inc.php';
 
-require 'db.inc.php';
- if(isset($_POST['forminscription']))
- {
+    if(isset($_POST['formadmin'])){
     if(!empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2']) AND !empty($_POST['adresse']) AND !empty($_POST['ville']) AND !empty($_POST['code_postal'])) 
     {
         $nom = htmlspecialchars($_POST['nom']);
@@ -21,34 +20,35 @@ require 'db.inc.php';
                $mailexist = $reqmail->rowCount();
                if($mailexist == 0) { 
                   if($mdp == $mdp2) {
-                    $insertmbr = $bdd->prepare("INSERT INTO utilisateur(nom, prenom, mail, mdp, adresse, ville, code_postal) VALUES(?, ?, ?, ?, ?, ?, ?)");
+                    $insertmbr = $bdd->prepare("INSERT INTO utilisateur(nom, prenom, mail, mdp, adresse, ville, code_postal, statut) VALUES(?, ?, ?, ?, ?, ?, ?, 1)");
                     $insertmbr->execute(array($nom, $prenom, $mail, $mdp, $adresse, $ville, $code_postal));
-                    header("Location: ../inscription.php?erreur=none");
+                    header("Location: ../add-admin.php?erreur=none");
                     exit();
                   } 
                   else {
-                    header("Location: ../inscription.php?erreur=mdperreur");
+                    header("Location: ../add-admin.php?erreur=mdperreur");
                     exit();
                   }
                   }
                   else {
-                    header("Location: ../inscription.php?erreur=userExist");
+                    header("Location: ../add-admin.php?erreur=userExist");
                     exit();        
                   }
                   }     
                   else {
-                    header("Location: ../inscription.php?erreur=adresseinvalide");
+                    header("Location: ../add-admin.php?erreur=adresseinvalide");
                     exit();              
                   }
                   } 
                   else {
-                    header("Location: ../inscription.php?erreur=mailerreur");
+                    header("Location: ../add-admin.php?erreur=mailerreur");
                     exit();  
                   }
       }
     else{
-      header("Location: ../inscription.php?erreur=champsmanquant");
+      header("Location: ../add-admin.php?erreur=champsmanquant");
       exit();  
     }
     
  } 
+?>
