@@ -9,6 +9,10 @@ body{
 li{
     list-style: none;
 }
+
+.btn{
+    background-color: none  !important;
+}
 /* NavBar */
 .navbar{
 	background-color: #222222;
@@ -345,9 +349,58 @@ padding-top: 16%;
     font-weight: 500;
 }
 
+.no-result{
+    font-weight: 700;
+    font-size :18px;
+}
+
+.food-search{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF5F1;
+    margin-top: 30px;
+}
+
+.food-search form{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.btn-search{
+    background-color: #B5C2AA!important;
+    border-color: transparent !important;
+
+}
 
 /* ADMIN */
 
+.add-produit{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+
+}
+.add-produit-text{
+    width: 100%;
+}
+.add-produit-btn{
+    display: flex;
+}
+
+.add-produit-btn input{
+    margin: 0 auto;
+}
+.add-produit form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+}
 .admin-title{
     padding: 3%;
     font-weight: 800;
@@ -357,3 +410,16 @@ padding-top: 16%;
     display: flex;
     justify-content: space-around;
 }
+
+.form-check-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.form-check-container label{
+    font-weight: 700;
+    padding: 5px;
+}
+

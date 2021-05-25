@@ -12,24 +12,25 @@
      ?>
     <div class="container">
             <h2 class="admin-title">Ajouter un Produit</h2>
+            <div class="add-produit">
             <form action="" method="POST" enctype="multipart/form-data">        
-                <div class="form-input">
+                <div class="mb-3">
                     <input type="text" class="form-control" name="titre" placeholder="Entrez le nom du nouveau produit" />
                 </div>
-                <div class="form-input">
-                    <textarea class="" name="description" placeholder="Entrez une description "></textarea>
+                <div class="mb-3">
+                    <textarea class="add-produit-text" name="description" placeholder="  Entrez une description "></textarea>
                 </div>
-                <div class="form-input">
+                <div class="mb-3">
                     <input type="number" class="form-control" name="prix" placeholder="Entrez le prix du nouveau produit" />
                 </div>
-                <div class="form-input">
+                <div class="mb-3">
                     <input type="number" class="form-control" name="stock" placeholder="Entrez le stock du nouveau produit" />
                 </div>
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="inputGroupFile01">Selectionner une photo</label>
                     <input type="file" class="form-control" name="photo" id="inputGroupFile01">
                 </div>
-                <div class="">
+                <div class="mb-3">
                     <select name="categorie">
                         <?php 
                         $categorie  = $bdd->query("SELECT * FROM categorie WHERE active='Oui'");
@@ -38,10 +39,11 @@
                         <?php endforeach ?>
                     </select>    
                 </div>
-                <div class="form-btn">
+                <div class="mb-3 add-produit-btn">
                     <input class="btn btn-secondary btn-lg" type="submit" name="formproduit" value="Ajouter un nouveau produit" />
                 </div>                
             </form>
+            </div>
             <?php
                  if(isset($_POST['formproduit'])){
                     $titre = htmlspecialchars($_POST['titre']);

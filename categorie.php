@@ -15,6 +15,13 @@
     <?php endforeach; ?>         
     </ul>
     <div class="container">
+        <div class="food-search">
+        <form action="food-search.php" method="POST" >
+            <input type="search" name="search" class="form-control" placeholder="Cherchez ce qu'il vous ferais plaisir !" required>
+            <input type="submit" name="submit" value="Rechercher" class="btn btn-primary btn-search">
+        </form>   
+        </div> 
+    <h2 class="admin-title"> Les + commandés : </h2>    
 
     <div class="card col-4" style="width: 18rem;">
         <div class="card-body">

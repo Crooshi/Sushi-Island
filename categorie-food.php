@@ -23,14 +23,13 @@
         else{
             header('location:./categorie.php');
         }
-
     ?>
     <h2 class="food-menu-heading"><?= $categorie_titre['libelle']?></h2>
-
+    <div class="container">    
         <?php 
             $produit  = $bdd->query("SELECT * FROM produit WHERE id_categorie=$categorie_id");
-            foreach($produit as $p) :
-        ?>
+           if($produit->rowCount() > 0) {
+            while($p = $produit->fetch()) {?>
             <div class="food-menu-container">
                 <div class="food-menu-item">
                             <div class="food-image">
@@ -44,7 +43,12 @@
                             </div>
                 </div>             
             </div>
-        <?php endforeach; ?>
+        <?php }
+           }
+        else{ echo "<p class='no-result'>Pas de produits disponible dans cette catégorie pour l'instant !</p>";}
+        ?>
+        </div>    
+
 <?php
     include_once 'footer.php';
 ?>

@@ -43,11 +43,9 @@
    <h2 class="admin-title">Modifier un Admin</h2>
             <form action="" method="POST">
                 <div class="form-input">
-                    <label>Nom :</label>
                     <input type="text" class="form-control" name="newnom" placeholder="Nom" value="<?= $user['nom']?>" />
                 </div>
                 <div class="form-input">
-                    <label>E-mail :</label>
                     <input type="email" class="form-control" name="newmail" placeholder="E-mail" value="<?= $user['mail']?>" />
                 </div>
                 <div class="form-input">
