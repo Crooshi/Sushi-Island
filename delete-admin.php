@@ -8,7 +8,7 @@
     $stmt->execute();
 
 
-    header('location:./admin.php?erreur=none');
+    header('location:./manage-admin.php?erreur=none');
 
 
 ?>

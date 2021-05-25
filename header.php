@@ -34,7 +34,7 @@
                     <a class="nav-link" href="./categorie.php">Menu</a>
                 </li>
                 <?php
-                    if(isset($_SESSION["id_user"])){
+                    if(isset($_["id_user"])){
                         echo "<li class='nav-item'> <a class='nav-link' href='./profil.php'>Mon Profil</a> </li>";
                         echo "<li class='nav-item'> <a class='nav-link' href='includes/deconnexion.inc.php'>Se déconnecter</a> </li>";
                     }
