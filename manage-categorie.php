@@ -1,17 +1,17 @@
 <?php
     include_once 'header.php';
-    require 'includes/db.inc.php';   
-?>
+    require 'includes/db.inc.php';
+    if(isset($_SESSION["id_user"]) AND $_SESSION['statut']==1){
+ ?>
     <section>
     <?php include_once 'header-admin.php'; ?>
    <div class="container">
     <h2 class="admin-title">Gestions des Catégories</h2>
         <?php
-            if(isset($_GET["erreur"])){
-                if($_GET["erreur"] == "supp"){
-                    echo "<p class='erreur-message'> Catégorie supprimée !</p> ";
-                }
-            }
+        if(isset($_SESSION['delete'])){
+            echo $_SESSION['delete'];
+            unset($_SESSION['delete']);
+        }
         ?>
         <a href="./add-categorie.php" class="btn btn-outline-dark">Ajouter une catégorie</a>
         <table class="table">
@@ -45,5 +45,9 @@
     </div>
     </section>
 <?php
+   }
+   else{
+       echo "vous n'avez pas accès à cette page";
+   } 
     include_once 'footer.php';
 ?>

@@ -1,7 +1,8 @@
 <?php
     include_once 'header.php';
-    require 'includes/db.inc.php';   
-?>
+    require 'includes/db.inc.php';
+    if(isset($_SESSION["id_user"]) AND $_SESSION['statut']==1){
+ ?>
 <?php include_once 'header-admin.php'; ?>
 
 <div class="container">
@@ -15,13 +16,13 @@
         $newnom = htmlspecialchars($_POST['newnom']);
         $insertnom = $bdd->prepare("UPDATE utilisateur SET nom = ? WHERE id_user = ?");
         $insertnom ->execute(array($newnom, $id));
-        header('Location: admin.php?id='.$id);
+        header('Location: manage-admin.php?id='.$id);
     }
     if(isset($_POST['newmail']) AND !empty($_POST['newmail']) AND $_POST['newmail'] != $user['mail']) {
         $newmail = htmlspecialchars($_POST['newmail']);
         $insertmail = $bdd->prepare("UPDATE utilisateur SET mail = ? WHERE id_user = ?");
         $insertmail->execute(array($newmail, $id));
-        header('Location: admin.php?id='.$id);
+        header('Location: manage-admin.php?id='.$id);
     }
     if(isset($_POST['newmdp1']) AND !empty($_POST['newmdp1']) AND isset($_POST['newmdp2']) AND !empty($_POST['newmdp2'])) {
         $mdp1 = sha1($_POST['newmdp1']);
@@ -29,13 +30,13 @@
         if($mdp1 == $mdp2) {
             $insertmdp = $bdd->prepare("UPDATE utilisateur SET mdp = ? WHERE id_user = ?");
             $insertmdp->execute(array($mdp1, $id));
-            header('Location: admin.php?id='.$id);
+        header('Location: manage-admin.php?id='.$id);
         } else {
             $msg = "Vos deux mdp ne correspondent pas !";
         }
     }
     if(isset($_POST['newnom']) AND $_POST['newnom']== $user['nom']){
-        header('Location: admin.php?id='.$id);
+        header('Location: manage-admin.php?id='.$id);
     }
     
 ?>
@@ -64,10 +65,14 @@
 <?php   
 }
 else {
-   header("Location: admin.php");
+    header('Location: manage-admin.php');
 }
 ?>
 
 <?php
+  }
+   else{
+       echo "vous n'avez pas accès à cette page";
+   } 
     include_once 'footer.php';
 ?>

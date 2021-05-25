@@ -1,18 +1,19 @@
 <?php
     include_once 'header.php';
-    require 'includes/db.inc.php';   
-?>
+    require 'includes/db.inc.php';
+    if(isset($_SESSION["id_user"]) AND $_SESSION['statut']==1){
+ ?>
+
     <section>
     <?php include_once 'header-admin.php'; ?>
    <div class="container">
     <h2 class="admin-title">Gestions des Produits</h2>
-    <?php
-        if(isset($_GET["erreur"])){
-            if($_GET["erreur"] == "none"){
-                echo "<p class='erreur-message'> Produit supprimé avec succès !</p> ";
-            }
-        }
-    ?>
+   <?php
+     if(isset($_SESSION['delete'])){
+         echo $_SESSION['delete'];
+         unset($_SESSION['delete']);
+     }
+     ?>
     <?php
      if(isset($_SESSION['upload'])){
          echo $_SESSION['upload'];
@@ -76,5 +77,9 @@
     </div>
     </section>
 <?php
+   }
+   else{
+       echo "vous n'avez pas accès à cette page";
+   } 
     include_once 'footer.php';
 ?>

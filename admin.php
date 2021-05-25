@@ -1,7 +1,8 @@
 <?php
     include_once 'header.php';
-    require 'includes/db.inc.php';   
-?>
+    require 'includes/db.inc.php';
+    if(isset($_SESSION["id_user"]) AND $_SESSION['statut']==1){
+ ?>
 
   <section>
        <?php include_once 'header-admin.php'; ?>
@@ -32,5 +33,9 @@
     </section>    
 
 <?php
+  }
+   else{
+       echo "vous n'avez pas accès à cette page";
+   } 
     include_once 'footer.php';
 ?>

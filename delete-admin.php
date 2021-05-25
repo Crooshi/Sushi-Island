@@ -7,8 +7,10 @@
     $stmt = $bdd->prepare($req);
     $stmt->execute();
 
-
-    header('location:./manage-admin.php?erreur=none');
+    if($stmt ==true){
+        $_SESSION['delete'] = "<p class='erreur-message'> Admin supprimé !</p> ";
+        header('location:./manage-admin.php');
+    }
 
 
 ?>

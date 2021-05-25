@@ -19,7 +19,12 @@ session_start();
                 $_SESSION['statut'] = $userinfo['statut'];
 
                 $_SESSION['mail'] = $userinfo['mail'];
-                header("Location: ../index.php?id=".$_SESSION['id_user']);
+                if($userinfo['statut'] == 0){
+                    header("Location: ../index.php?id=".$_SESSION['id_user']);
+                }
+                else if($userinfo['statut'] == 1){
+                    header("Location: ../admin.php?id=".$_SESSION['id_user']);
+                }
             } else {
                header("Location: ../connexion.php?erreur=wrongconnect");
                 exit(); 

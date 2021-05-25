@@ -19,9 +19,10 @@
     $req  = "DELETE FROM produit WHERE id_produit = $id";
     $stmt = $bdd->prepare($req);
     $stmt->execute();
-    
-    header('location: ./manage-produit.php?erreur=none');
- 
+    if($stmt ==true){
+        $_SESSION['delete'] = "<p class='erreur-message'> Produit supprimé avec succès !</p> ";
+        header('location: ./manage-produit.php');
+    }
     
     
 

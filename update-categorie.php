@@ -1,7 +1,8 @@
 <?php
     include_once 'header.php';
-    require 'includes/db.inc.php';   
-?>
+    require 'includes/db.inc.php';
+    if(isset($_SESSION["id_user"]) AND $_SESSION['statut']==1){
+ ?>
 <?php include_once 'header-admin.php'; ?>
 <div class="container">
 <?php
@@ -14,16 +15,16 @@
         $newlibelle = htmlspecialchars($_POST['newlibelle']);
         $insertnom = $bdd->prepare("UPDATE categorie SET libelle = ? WHERE id_categorie = ?");
         $insertnom ->execute(array($newnom, $id));
-        header('Location: admin.php');
+        header('location:./manage-categorie.php');
     }
     if(isset($_POST['newactive']) AND !empty($_POST['newactive']) AND $_POST['newactive'] != $categorie['active']) {
         $newactive = htmlspecialchars($_POST['newactive']);
         $insertactive = $bdd->prepare("UPDATE categorie SET active = ? WHERE id_categorie = ?");
         $insertactive->execute(array($newactive, $id));
-        header('Location: admin.php');
+        header('location:./manage-categorie.php');
     }
     if(isset($_POST['newlibelle']) AND $_POST['newlibelle']== $categorie['libelle']){
-        header('Location: admin.php');
+        header('location:./manage-categorie.php');
     }
     
 ?>
@@ -46,10 +47,13 @@
 <?php   
 }
 else {
-   header("Location: admin.php");
+   header('location:./manage-categorie.php');
 }
 ?>
-
 <?php
+  }
+   else{
+       echo "vous n'avez pas accès à cette page";
+   } 
     include_once 'footer.php';
 ?>
