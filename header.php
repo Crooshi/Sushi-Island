@@ -34,8 +34,12 @@
                     <a class="nav-link" href="./categorie.php">Menu</a>
                 </li>
                 <?php
-                    if(isset($_["id_user"])){
+                    if(isset($_SESSION["id_user"]) AND $_SESSION['statut']=0){
                         echo "<li class='nav-item'> <a class='nav-link' href='./profil.php'>Mon Profil</a> </li>";
+                        echo "<li class='nav-item'> <a class='nav-link' href='includes/deconnexion.inc.php'>Se déconnecter</a> </li>";
+                    }
+                    else if(isset($_SESSION["id_user"]) AND $_SESSION['statut']=1){
+                        echo "<li class='nav-item'> <a class='nav-link' href='./admin.php'>Gestion admin</a> </li>";
                         echo "<li class='nav-item'> <a class='nav-link' href='includes/deconnexion.inc.php'>Se déconnecter</a> </li>";
                     }
                    
@@ -46,9 +50,6 @@
                 ?>
                 <li class="nav-item">
                     <a class="nav-link" href="./addproduct.php">Panier</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./admin.php">Admin</a>
                 </li>
                 </ul>
             </div>
