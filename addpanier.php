@@ -14,16 +14,19 @@
     				'id_produit' => $produit['id_produit'],
     				'item_name' => $produit["titre"],
     				'prix' => $produit["prix"],
+    				'stock' => $produit["stock"],
     				'quantité' => 1,
     			);
     			$count = count($_SESSION["npanier"]);
-    			$_SESSION["npanier"][$count] = $item_array;
+    			//printf($count);
+    			$_SESSION["npanier"][$count+1] = $item_array;
     		}
     	}else{
     		$item_array = array(
     			'id_produit' => $produit['id_produit'],
     			'item_name' => $produit["titre"],
     			'prix' => $produit["prix"],
+    			'stock' => $produit["stock"],
     			'quantité' => 1,
     		);
     		$_SESSION["npanier"][0] = $item_array;
@@ -39,6 +42,8 @@
     		}
     	}
     }
+
+    //print_r($_SESSION["npanier"]);
     
 ?>
 <section>
@@ -66,7 +71,7 @@
 		            <tr>
 		            <th scope="row"><?php echo $i++?></th>
 		            <td><?php echo $p['item_name'];?></td>
-		            <td><input type="text" name="quantité" value = "1"></td>
+		            <td><input type="number" min="1" max="<?php $p['stock'] ?>" name="quantité" value = "1"></td>
 		            <td><?php echo $p['prix'];?></td>
 		            <td><?php echo number_format($p['prix']/* *$p['quantité']*/,2);?></td>
 		            <td>  
@@ -80,6 +85,7 @@
 		            </tr>
 		        </tbody>  
 	    	</table>
+	    	<a href="order.php" class="btn btn-secondary">Commander</a>
 
 	    <?php
 	    }else{
