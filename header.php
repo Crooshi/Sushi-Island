@@ -49,7 +49,7 @@
                     }
                 ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="./addproduct.php">Panier</a>
+                    <a class="nav-link" href="./addpanier.php">Panier</a>
                 </li>
                 </ul>
             </div>

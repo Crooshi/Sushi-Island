@@ -18,6 +18,7 @@
     				'quantité' => 1,
     			);
     			$count = count($_SESSION["npanier"]);
+
     			//printf($count);
     			$_SESSION["npanier"][$count+1] = $item_array;
     		}
@@ -47,9 +48,11 @@
     
 ?>
 <section>
-	<h2 class = 'panier-title container'>Gestion du panier</h2>
+	<div class="container">
+	<h2 class = 'panier-title'>Votre panier</h2>
 	<?php
 	    if(!empty($_SESSION['npanier'])) { ?>
+	    	<form action = "order.php" method = "POST">
 	    	<table class="table">
 		        <thead>
 		            <tr>
@@ -85,13 +88,18 @@
 		            </tr>
 		        </tbody>  
 	    	</table>
-	    	<a href="order.php" class="btn btn-secondary">Commander</a>
-
+	    	<!-- <a href="order.php" class="btn btn-secondary">Commander</a> -->
+            <div class="form-btn">
+            	<input type="submit" name="forminscription" value="Commander" />
+            </div>
+	    </form>
 	    <?php
 	    }else{
-	        die("vous n'avez rien dans le panier");
+	        echo "<p class='no-result'>vous n'avez rien dans le panier !</p>
+			<a class='btn btn-primary' href='./categorie.php' role='button'> Découvrez notre menu !</a>";
 	    }
 	?>
+	</div>
 </section>
 
 
