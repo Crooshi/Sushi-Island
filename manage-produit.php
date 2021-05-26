@@ -50,7 +50,7 @@
             <td><?= $p['titre']?></td>
             <td><?= $p['description']?></td>
             <td><?= $p['prix']?>€</td>
-            <td><?= $p['stock']?></td>
+            <td class='text-break'><?= $p['stock']?></td>
             <td><?php if ($p['photo']== ""){
                     echo "Pas d'image ajouté";
                     }

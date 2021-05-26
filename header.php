@@ -35,7 +35,8 @@
                 </li>
                 <?php
                     if(isset($_SESSION["id_user"]) AND $_SESSION['statut']==0){
-                        echo "<li class='nav-item'> <a class='nav-link' href='./profil.php'>Mon Profil</a> </li>";
+                        $user = $_SESSION['id_user'];
+                        echo "<li class='nav-item'> <a class='nav-link' href='./profil.php?id=$user'> Mon Profil</a> </li>";
                         echo "<li class='nav-item'> <a class='nav-link' href='includes/deconnexion.inc.php'>Se déconnecter</a> </li>";
                     }
                     else if(isset($_SESSION["id_user"]) AND $_SESSION['statut']==1){
@@ -49,7 +50,7 @@
                     }
                 ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="./addproduct.php">Panier</a>
+                    <a class="nav-link" href="./addpanier.php">Panier</a>
                 </li>
                 </ul>
             </div>

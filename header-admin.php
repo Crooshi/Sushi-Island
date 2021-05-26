@@ -15,4 +15,7 @@
     <li class="nav-item px-5">
         <a class="nav-link" href="./manage-produit.php">Gestion des Produits</a>
     </li>
+    <li class="nav-item px-5">
+        <a class="nav-link" href="./manage-order.php">Gestion des Commandes</a>
+    </li>
 </ul>

@@ -2,11 +2,11 @@
     require 'includes/db.inc.php';   
 
     $id =$_GET['id'];
-    $req  = "DELETE FROM commande WHERE id_commande=$id";
+    $req  = "DELETE FROM categorie WHERE id_categorie=$id";
     $stmt = $bdd->prepare($req);
     $stmt->execute();
 
-    header('location:./manage-order.php?delete=ok');
+    header('location:./manage-categorie.php?delete=ok');
     exit();
    
 

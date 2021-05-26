@@ -37,7 +37,7 @@
                             </div>
                             <div class="food-description">
                                 <h2 class="food-title"><?= $p['titre']?></h2>
-                                <p><?= $p['description']?></p>
+                                <p class='text-break'><?= $p['description']?></p>
                                 <p class="food-price">Prix : <?= $p['prix']?> €</p>
                                 <a href="addpanier.php?id=<?= $p["id_produit"] ?>" class="btn btn-primary">Ajouter au panier </a>
                             </div>
@@ -45,7 +45,7 @@
             </div>
         <?php }
            }
-        else{ echo "<p class='no-result'>Pas de produits disponible dans cette catégorie pour l'instant !</p>";}
+        else{ echo "<p class='alert alert-info'>Pas de produits disponible dans cette catégorie pour l'instant !</p>";}
         ?>
         </div>    
 

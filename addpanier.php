@@ -51,6 +51,7 @@
 	<h2 class = 'panier-title'>Votre panier</h2>
 	<?php
 	    if(!empty($_SESSION['npanier'])) { ?>
+	    	<form action = "order.php" method = "POST">
 	    	<table class="table">
 		        <thead>
 		            <tr>
@@ -86,8 +87,11 @@
 		            </tr>
 		        </tbody>  
 	    	</table>
-	    	<a href="order.php" class="btn btn-secondary">Commander</a>
-
+	    	<!-- <a href="order.php" class="btn btn-secondary">Commander</a> -->
+            <div class="form-btn">
+            	<input type="submit" name="forminscription" value="Commander" />
+            </div>
+	    </form>
 	    <?php
 	    }else{
 	        echo "<p class='no-result'>vous n'avez rien dans le panier !</p>

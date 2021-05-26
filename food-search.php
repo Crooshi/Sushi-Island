@@ -44,7 +44,7 @@
         <?php } ?>
         </ul>
         <?php } else { ?>
-           <p class="no-result"> Aucun résultat pour: <?= $search ?> Peut-être une prochaine fois ! </p>
+           <p class="alert alert-info"> Aucun résultat pour: <?= $search ?> Peut-être une prochaine fois ! </p>
            
         <?php } ?>
             <a class="btn btn-primary" href="./categorie.php" role="button">Retour à la page precédente !</a>
