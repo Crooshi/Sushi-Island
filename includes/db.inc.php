@@ -12,8 +12,8 @@
      */
 
     $dsn = 'mysql:dbname=site;host=localhost';
-    $user = 'Lea';
-    $password = 'test';
+    $user = 'root';
+    $password = 'root';
 
     try{
         $bdd = new PDO($dsn, $user, $password);
