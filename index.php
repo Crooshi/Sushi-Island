@@ -38,7 +38,7 @@
               <p>
                 Nos chefs choississent pour vous les meilleurs produits 
               </p>
-              <a class="card-btn" href="#">Découvrir</a>
+              <a class="card-btn" href="./categorie.php">Découvrir</a>
             </div>
           </div>
           <div class="card-item col-md-4">
@@ -51,7 +51,7 @@
               <p>
                 Midi & soir sans contact pour votre plus grande satisfaction
               </p>
-              <a class="card-btn" href="#">Découvrir</a>
+              <a class="card-btn" href="./categorie.php">Découvrir</a>
             </div>
 		  </div>
           <div class="card-item col-md-4">
@@ -65,7 +65,7 @@
                 Évitez les files d’attente 
                 en commandant en ligne depuis chez vous !
               </p>
-              <a class="card-btn" href="#">Découvrir</a>
+              <a class="card-btn" href="./categorie.php">Découvrir</a>
             </div>
 		  </div>
         </div>
@@ -73,7 +73,7 @@
     </section>
 	  <section class="parallax para">
 		  <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-      <div class="para-btn"> <a href="">Commandez</a></div>
+      <div class="para-btn"> <a href="./categorie.php">Commandez</a></div>
 	  </section>
 <?php 
     include_once 'footer.php';
