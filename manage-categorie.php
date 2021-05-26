@@ -8,9 +8,10 @@
    <div class="container">
     <h2 class="admin-title">Gestions des Catégories</h2>
         <?php
-        if(isset($_SESSION['delete'])){
-            echo $_SESSION['delete'];
-            unset($_SESSION['delete']);
+        if(isset($_GET['delete'])){
+            if($_GET['delete'] == 'ok'){
+                echo"<div class='alert alert-success'> La Catégorie a bien été supprimée !</div>";
+            }
         }
         ?>
         <a href="./add-categorie.php" class="btn btn-outline-dark">Ajouter une catégorie</a>
@@ -34,7 +35,7 @@
             <td><?= $c['libelle']?></td>
             <td><?= $c['active']?></td>
             <td>  <a href="./update-categorie.php?id=<?= $c['id_categorie']?>" class="btn btn-secondary">Modifier</a>
-                <a href="./delete-categorie.php?id=<?= $c['id_categorie']?>" class="btn btn-danger">Supprimer</a></td>
+                <a href="./delete-categorie.php?id=<?= $c['id_categorie']?>" class="btn btn-danger" onclick="return confirm('Voulez vous vraiment effectuer cette action ?')">Supprimer</a></td>
             </tr>
         </tbody>
         <?php

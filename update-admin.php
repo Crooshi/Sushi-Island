@@ -31,7 +31,8 @@
             $insertmdp = $bdd->prepare("UPDATE utilisateur SET mdp = ? WHERE id_user = ?");
             $insertmdp->execute(array($mdp1, $id));
         header('Location: manage-admin.php?id='.$id);
-        } else {
+        } 
+        else {
             $msg = "Vos deux mdp ne correspondent pas !";
         }
     }

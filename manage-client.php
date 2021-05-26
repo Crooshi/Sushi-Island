@@ -8,10 +8,11 @@
    <div class="container">
        <!-- Client -->
         <h2 class="admin-title">Gestions des Clients</h2>
-        <?php
-        if(isset($_SESSION['delete'])){
-            echo $_SESSION['delete'];
-            unset($_SESSION['delete']);
+         <?php
+        if(isset($_GET['delete'])){
+            if($_GET['delete'] == 'ok'){
+                echo"<div class='alert alert-success'> La Catégorie a bien été supprimée !</div>";
+            }
         }
         ?>
         <table class="table">
@@ -38,7 +39,7 @@
             <td><?= $c['mail']?></td>
             <td> # </td>
             <td>  
-                <a href="./delete-client.php?id=<?= $c['id_user']?>" class="btn btn-danger">Supprimer</a></td>
+                <a href="./delete-client.php?id=<?= $c['id_user']?>" class="btn btn-danger" onclick="return confirm('Voulez vous vraiment effectuer cette action ?')">Supprimer</a></td>
             </tr>
         </tbody>   
         <?php

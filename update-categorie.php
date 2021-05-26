@@ -28,10 +28,10 @@
     }
     
 ?>
-   <h2 class="admin-title">Modifier un Admin</h2>
+   <h2 class="admin-title">Modifier une Catégorie</h2>
             <form action="" method="POST">
                 <div class="form-input">
-                    <input type="text" class="form-control" name="newlibelle" placeholder="Entrez le nom de la nouvelle catégorie" />
+                    <input type="text" class="form-control" name="newlibelle" placeholder="Entrez le nouveau nom de la  catégorie" />
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="newactive" value="Oui">Oui

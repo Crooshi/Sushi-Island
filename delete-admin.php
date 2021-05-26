@@ -8,7 +8,7 @@
     $stmt->execute();
 
     if($stmt ==true){
-        $_SESSION['delete'] = "<p class='erreur-message'> Admin supprimé !</p> ";
+        $_SESSION['delete'] = "<div class='alert alert-success'> L'Admin a bien été supprimé !</div> ";
         header('location:./manage-admin.php');
     }
 

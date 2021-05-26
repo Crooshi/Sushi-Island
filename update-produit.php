@@ -45,40 +45,13 @@
         $insertcategorie ->execute(array($newcategorie, $id));
        header('Location: manage-produit.php');
     }
-   /*  if(isset($_FILES['photo']['name'])){
-        $image_name = $_FILES['photo']['name'];
-        $source = $_FILES['photo']['tmp_name'];
-        $destination = "img/". $image_name;
-
-        $upload = move_uploaded_file($source, $destination);
-        $insertphoto = $bdd->prepare("UPDATE produit SET photo = $image_name WHERE id_produit = ?");
-        $insertphoto ->execute(array($image_name, $id));
-        if($upload==false){
-            $_SESSION['upload'] = "<div> Erreur pour upload l'image. </div>";                
-            header("Location: ./manage-produit.php");
-            die();
-        }
-        if($current_image != ""){
-        $path = "img/".$current_image;
-        $remove = unlink($path);
-
-        if($remove == false){
-            $_SESSION['remove-failed'] ="<div>Erreur lors de la supprision de l'image, veuillez réessayer plutard</div>";
-            header('location:./manage-produit.php');
-            die();
-        } 
-        }    
-    else{
-        $image_name = $current_image;
-    }
-    } */
     
     if(isset($_POST['newtitre']) AND $_POST['newtitre']== $produit['titre']){
        header('Location: manage-produit.php');
     }
     
 ?>
-   <h2 class="admin-title">Modifier un Admin</h2>
+   <h2 class="admin-title">Modifier un produit</h2>
             <form action="" method="POST" enctype="multipart/form-data">
                 <div class="form-input">
                     <input type="text" class="form-control" name="newtitre" value="<?= $produit['titre']?>" />
@@ -103,10 +76,6 @@
                     }
 
             ?>      </p>
-                </div>
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupFile01">Selectionner une nouvelle photo</label>
-                    <input type="file" class="form-control" name="newphoto" id="inputGroupFile01">
                 </div>
                 <div class="">
                     <select name="newcategorie">

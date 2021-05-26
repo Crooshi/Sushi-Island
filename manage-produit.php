@@ -26,7 +26,7 @@
          unset($_SESSION['remove-failed']);
      }
      ?>
-        <a href="./add-produit.php" class="btn btn-outline-dark">Ajouter un produit</a>
+        <a href="./add-produit.php" class="btn btn-outline-dark" >Ajouter un produit</a>
         <table class="table">
         <thead>
             <tr>
@@ -64,7 +64,7 @@
 
             <td>  
                 <a href="./update-produit.php?id=<?= $p['id_produit']?>" class="btn btn-secondary">Modifier</a>
-                <a href="./delete-produit.php?id=<?= $p['id_produit']?>&image_name=<?= $p['photo']?>" class="btn btn-danger">Supprimer</a>
+                <a href="./delete-produit.php?id=<?= $p['id_produit']?>&image_name=<?= $p['photo']?>" class="btn btn-danger" onclick="return confirm('Voulez vous vraiment effectuer cette action ?')">Supprimer</a>
             </td>
             </tr>
         </tbody>

@@ -23,10 +23,10 @@
                 <?php
                 if(isset($_GET["erreur"])){
                     if($_GET["erreur"] == "wrongconnect"){
-                        echo "<p class='erreur-message'> Mauvais mail ou mot de passe !</p> ";
+                        echo "<div class='alert alert-danger'> Mauvais mail ou mot de passe !</div> ";
                     }
                     else if($_GET["erreur"] == "champsmanquant"){
-                        echo "<p class='erreur-message'>Tous les champs doivent être complétés !</p>";
+                        echo "<div lass='alert alert-danger'>Tous les champs doivent être complétés !</div>";
                     }  
                 }
                 ?>

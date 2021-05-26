@@ -7,10 +7,8 @@
     $stmt = $bdd->prepare($req);
     $stmt->execute();
 
-    if($stmt ==true){
-        $_SESSION['delete'] = "<p class='erreur-message'> Client supprimé !</p> ";
-        header('location:./manage-client.php');
-    }
+    header('location:./manage-client.php?delete=ok');
+    exit();
 
 
 ?>

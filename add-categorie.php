@@ -38,12 +38,12 @@
                    }
                    $insertmbr = $bdd->prepare("INSERT INTO categorie(libelle, active) VALUES(?, ?)");
                     $insertmbr->execute(array($libelle, $active));
-                    $erreur = " Catégorie ajoutée !";
+                    $erreur = "La Catégorie ".$libelle. " a bien été ajoutée !";
                 }
             ?>
            <?php
             if(isset($erreur)) {
-                echo '<font color="red">'.$erreur."</font>";
+                echo '<div class="alert alert-success">'.$erreur."</div>";
             }
             ?>
     </div>        

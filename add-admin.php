@@ -41,22 +41,22 @@
             <?php
                 if(isset($_GET["erreur"])){
                     if($_GET["erreur"] == "adresseinvalide"){
-                        echo "<p class='erreur-message'> Votre adresse mail n'est pas valide !</p> ";
+                        echo "<div class='alert alert-danger'> Votre adresse mail n'est pas valide !</div> ";
                     }
                     else if($_GET["erreur"] == "userExist"){
-                        echo "<p class='erreur-message'>Adresse mail déjà utilisée !</p>";
+                        echo "<div class='alert alert-danger'>Adresse mail déjà utilisée !</div>";
                     }   
                     else if($_GET["erreur"] == "mdperreur"){
-                        echo "<p class='erreur-message'>Vos mots de passes ne correspondent pas !</p>";
+                        echo "<div class='alert alert-danger'>Vos mots de passes ne correspondent pas !</div>";
                     }
                     else if($_GET["erreur"] == "mailerreur"){
-                        echo "<p class='erreur-message'>Vos adresses mail ne correspondent pas !</p>";
+                        echo "<div class='alert alert-danger'>Vos adresses mail ne correspondent pas !</div>";
                     }
                     else if($_GET["erreur"] == "champsmanquant"){
-                        echo "<p class='erreur-message'>Tous les champs doivent être complétés !</p>";
+                        echo "<div class='alert alert-danger'>Tous les champs doivent être complétés !</div>";
                     }  
                     else if($_GET["erreur"] == "none"){
-                        echo "<p class='erreur-message'> Admin crée !</p>";
+                        echo "<div class='alert alert-success'> L'Admin a bien été crée !</div>";
                     }   
                 }
                 ?>

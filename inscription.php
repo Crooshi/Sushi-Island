@@ -41,22 +41,22 @@
                 <?php
                 if(isset($_GET["erreur"])){
                     if($_GET["erreur"] == "adresseinvalide"){
-                        echo "<p class='erreur-message'> Votre adresse mail n'est pas valide !</p> ";
+                        echo "<p class='alert alert-danger'> Votre adresse mail n'est pas valide !</p> ";
                     }
                     else if($_GET["erreur"] == "userExist"){
-                        echo "<p class='erreur-message'>Adresse mail déjà utilisée !</p>";
+                        echo "<p class='alert alert-danger'>Adresse mail déjà utilisée !</p>";
                     }   
                     else if($_GET["erreur"] == "mdperreur"){
-                        echo "<p class='erreur-message'>Vos mots de passes ne correspondent pas !</p>";
+                        echo "<p class='alert alert-danger'>Vos mots de passes ne correspondent pas !</p>";
                     }
                     else if($_GET["erreur"] == "mailerreur"){
-                        echo "<p class='erreur-message'>Vos adresses mail ne correspondent pas !</p>";
+                        echo "<p class='alert alert-danger'>Vos adresses mail ne correspondent pas !</p>";
                     }
                     else if($_GET["erreur"] == "champsmanquant"){
-                        echo "<p class='erreur-message'>Tous les champs doivent être complétés !</p>";
+                        echo "<p class='alert alert-danger'>Tous les champs doivent être complétés !</p>";
                     }  
                     else if($_GET["erreur"] == "none"){
-                        echo "<p class='erreur-message'>Vous êtes inscrits !</p>";
+                        echo "<p class='alert alert-success'>Vous êtes inscrits !</p>";
                     }   
                 }
                 ?>

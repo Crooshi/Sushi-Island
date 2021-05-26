@@ -36,7 +36,7 @@
             <td><?= $a['mail']?></td>
             <td>  
                 <a href="./update-admin.php?id=<?= $a['id_user']?>" class="btn btn-secondary">Modifier</a>
-                <a href="./delete-admin.php?id=<?= $a['id_user']?>" class="btn btn-danger">Supprimer</a></td>
+                <a href="./delete-admin.php?id=<?= $a['id_user']?>" class="btn btn-danger" onclick="return confirm('Voulez vous vraiment effectuer cette action ?')">Supprimer</a></td>
             </tr>
         </tbody>   
         <?php
