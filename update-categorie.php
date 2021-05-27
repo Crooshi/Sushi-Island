@@ -29,20 +29,26 @@
     
 ?>
    <h2 class="admin-title">Modifier une Catégorie</h2>
+      <div class="add-produit">
             <form action="" method="POST">
-                <div class="form-input">
+                <div class="mb-3">
                     <input type="text" class="form-control" name="newlibelle" placeholder="Entrez le nouveau nom de la  catégorie" />
                 </div>
+                <div class="form-check-container">
+                <label>Active : </label>
+
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="newactive" value="Oui">Oui
                 </div>
                  <div class="form-check">
                     <input class="form-check-input" type="radio" name="newactive" value="Non">Non
                 </div>
-                <div class="form-btn">
-                    <input class="btn btn-secondary btn-lg" type="submit" name="formcategorie" value="Mis à jour de la catégorie !" />
+                </div>
+                <div class="mb-3 add-produit-btn">
+                    <input class="btn btn-secondary btn-lg" type="submit" name="formcategorie" value="Mise à jour de la catégorie !" />
                 </div>                
             </form>
+    </div>    
 </div>
 <?php   
 }

@@ -85,10 +85,24 @@
                     $nb = $data['nb'];
                     ?> <?= $nb ?></p>
             </div>
-            </div>
-            
+            </div>  
         </div>
-        </div>        
+        </div> 
+        </div>
+        <br/>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Panier moyen</h5>
+                <p class="card-text"> <?php
+                    $res = $bdd->query("SELECT AVG(montant) as nb FROM commande");
+                    $data = $res->fetch();
+                    $nb = $data['nb'];
+                    ?> <?= number_format($nb, 2, ',', ' '); ?> €</p>
+            </div>
+            </div>
+        </div>       
         </div>
         </div>
     </section>    

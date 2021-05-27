@@ -18,8 +18,7 @@
     				'quantité' => 1,
     			);
     			$count = count($_SESSION["npanier"]);
-/*     			printf($count);
- */    			$_SESSION["npanier"][$count+1] = $item_array;
+  			$_SESSION["npanier"][$count+1] = $item_array;
     		}
     	}else{
     		$item_array = array(
@@ -87,15 +86,18 @@
 		            </tr>
 		        </tbody>  
 	    	</table>
-	    	<!-- <a href="order.php" class="btn btn-secondary">Commander</a> -->
-            <div class="form-btn">
+			 <?php  if(isset($_SESSION["id_user"])) {?>
+			<div class="form-btn">
             	<input type="submit" name="forminscription" value="Commander" />
-            </div>
+           	</div>
+			<?php  } else{ ?>
+			<p class='alert alert-info'>Veuillez vous <a href="inscription.php">inscrire</a> ou vous <a href="connexion.php">connecter</a> afin de pouvoir payer </p>
+			<?php } ?>
 	    </form>
 	    <?php
 	    }else{
 	        echo "<p class='no-result'>vous n'avez rien dans le panier !</p>
-			<a class='btn btn-primary' href='./categorie.php' role='button'> Découvrez notre menu !</a>";
+			<a class='btn btn-info' href='./categorie.php' role='button'> Découvrez notre menu !</a>";
 	    }
 	?>
 	</div>

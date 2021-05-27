@@ -21,7 +21,25 @@
         $insertprenom = $bdd->prepare("UPDATE utilisateur SET prenom = ? WHERE id_user = ?");
         $insertprenom ->execute(array($newprenom, $id));
         header('Location: profil.php?id='.$id);
+    } 
+    if(isset($_POST['newadresse']) AND !empty($_POST['newadresse']) AND $_POST['newadresse'] != $user['adresse']) {
+        $newadresse = htmlspecialchars($_POST['newadresse']);
+        $insertadresse = $bdd->prepare("UPDATE utilisateur SET adresse = ? WHERE id_user = ?");
+        $insertadresse ->execute(array($newadresse, $id));
+        header('Location: profil.php?id='.$id);
+    }   
+    if(isset($_POST['newville']) AND !empty($_POST['newville']) AND $_POST['newville'] != $user['ville']) {
+        $newville = htmlspecialchars($_POST['newville']);
+        $insertville = $bdd->prepare("UPDATE utilisateur SET ville = ? WHERE id_user = ?");
+        $insertville ->execute(array($newville, $id));
+        header('Location: profil.php?id='.$id);
     }    
+    if(isset($_POST['newcp']) AND !empty($_POST['newcp']) AND $_POST['newcp'] != $user['code_postal']) {
+        $newcp = htmlspecialchars($_POST['newcp']);
+        $insertcp = $bdd->prepare("UPDATE utilisateur SET code_postal = ? WHERE id_user = ?");
+        $insertcp ->execute(array($newcp, $id));
+        header('Location: profil.php?id='.$id);
+    }     
     if(isset($_POST['newmail']) AND !empty($_POST['newmail']) AND $_POST['newmail'] != $user['mail']) {
         $newmail = htmlspecialchars($_POST['newmail']);
         $insertmail = $bdd->prepare("UPDATE utilisateur SET mail = ? WHERE id_user = ?");
@@ -59,6 +77,15 @@
                 </div>
                 <div class="form-input">
                     <input type="password" class="form-control"  name="newmdp2" placeholder="Confirmez votre mdp"   />
+                </div>
+                <div class="form-input">
+                    <input type="text" class="form-control" name="newadresse" placeholder="Adresse" value="<?= $user['adresse']?>" />
+                </div>
+                <div class="form-input">
+                    <input type="text" class="form-control" name="newville" placeholder="Ville" value="<?= $user['ville']?>" />
+                </div>
+                <div class="form-input">
+                    <input type="text" class="form-control" name="newcp" placeholder="Code Postal" value="<?= $user['code_postal']?>" />
                 </div>
                 <div class="form-btn">
                     <input type="submit" name="formuser" value="Mis à jour du profil !" />

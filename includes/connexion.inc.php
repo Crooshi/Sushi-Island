@@ -1,7 +1,6 @@
 <?php
 session_start();
-/*     $bdd = new PDO('mysql:host=localhost;dbname=site', 'Lea', 'test');
- */    
+   
     require 'db.inc.php';
 
     if(isset($_POST['formconnexion'])) {
@@ -17,8 +16,9 @@ session_start();
                 $_SESSION['nom'] = $userinfo['nom'];
                 $_SESSION['prenom'] = $userinfo['prenom'];
                 $_SESSION['statut'] = $userinfo['statut'];
-
+                $_SESSION['adresse'] = $userinfo['adresse'];
                 $_SESSION['mail'] = $userinfo['mail'];
+                
                 if($userinfo['statut'] == 0){
                     header("Location: ../index.php?id=".$_SESSION['id_user']);
                 }

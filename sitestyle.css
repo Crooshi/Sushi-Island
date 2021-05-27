@@ -302,8 +302,7 @@ padding-top: 16%;
 
 .food-menu-container {
     display: flex;
-    flex-wrap: wrap;
-    padding: 50px 0px 0px 0px;
+    flex-direction: column;
 }
 
 .nav.justify-content-center.bg-light li a{
@@ -322,9 +321,12 @@ padding-top: 16%;
     object-position: center;
 }
 
+.food-image{
+    width: 30%;
+}
+
 .food-menu-item{
     display: flex;
-    flex: 1 1 600px;
     justify-content: space-evenly;
     margin-bottom: 3rem;
 }
@@ -332,6 +334,7 @@ padding-top: 16%;
 .food-description{
     margin: auto 1.5rem;
     text-align: center;
+    width: 70%;
 }
 
 .food-title{
@@ -387,6 +390,13 @@ padding-top: 16%;
     justify-content: center;
 
 }
+
+.add-produit form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+}
 .add-produit-text{
     width: 100%;
 }
@@ -394,15 +404,11 @@ padding-top: 16%;
     display: flex;
 }
 
+
 .add-produit-btn input{
     margin: 0 auto;
 }
-.add-produit form{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 80%;
-}
+
 .admin-title{
     padding: 3%;
     font-weight: 800;

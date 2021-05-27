@@ -52,20 +52,21 @@
     
 ?>
    <h2 class="admin-title">Modifier un produit</h2>
+   <div class="add-produit">
             <form action="" method="POST" enctype="multipart/form-data">
-                <div class="form-input">
+                <div class="mb-3">
                     <input type="text" class="form-control" name="newtitre" value="<?= $produit['titre']?>" />
                 </div>
-                 <div class="form-input">
-                    <textarea class="" name="newdescription"><?= $produit['description']?></textarea>
+                 <div class="mb-3">
+                    <textarea class="add-produit-text" name="newdescription"><?= $produit['description']?></textarea>
                 </div>
-                <div class="form-input">
+                <div class="mb-3">
                     <input type="number" class="form-control" name="newprix" value="<?= $produit['prix']?>" />
                 </div>
-                <div class="form-input">
+                <div class="mb-3">
                     <input type="number" class="form-control" name="newstock" value="<?= $produit['stock']?>" />
                 </div>
-                <div class="">
+                <div class="mb-3">
                     <p> <?php if ($produit['photo']== ""){
                     echo "Pas d'image ajouté";
                     }
@@ -77,7 +78,7 @@
 
             ?>      </p>
                 </div>
-                <div class="">
+                <div class="mb-3">
                     <select name="newcategorie">
                         <?php 
                         $categorie  = $bdd->query("SELECT * FROM categorie WHERE active='Oui'");
@@ -86,10 +87,11 @@
                         <?php endforeach ?>
                     </select>    
                 </div>
-                <div class="form-btn">
+                <div class="mb-3 add-produit-btn">
                     <input class="btn btn-secondary btn-lg" type="submit" name="formcategorie" value="Mis à jour du produit !" />
                 </div>                
             </form>
+            </div>
 </div>
 <?php   
 }

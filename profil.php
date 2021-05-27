@@ -16,7 +16,7 @@
     <?php } else{?> 
     <p class="fw-bold fw-bold">Vous n'avez fait aucune commande.</p>
     <?php } ?>
-    <a class="btn btn-primary" href="./update-profil.php?id=<?= $id ?>" role="button">Modifier mon Profil</a>
+    <a class="btn btn-info" href="./update-profil.php?id=<?= $id ?>" role="button">Modifier mon Profil</a>
 
 </div>
     

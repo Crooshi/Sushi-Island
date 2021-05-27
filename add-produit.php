@@ -39,7 +39,7 @@
                         <?php endforeach ?>
                     </select>    
                 </div>
-                <div class="mb-3 add-produit-btn">
+                <div class="mb-3 add-produit-btn ">
                     <input class="btn btn-secondary btn-lg" type="submit" name="formproduit" value="Ajouter un nouveau produit" />
                 </div>                
             </form>
