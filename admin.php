@@ -59,7 +59,7 @@
                     $sql = $bdd->prepare("SELECT *  FROM utilisateur WHERE id_user=$nb");
                     $sql->execute();
                     $c = $sql->fetch(PDO::FETCH_ASSOC);
-                    ?> <?= $c['nom'] ?></p>
+                    ?> <?= $c['nom']  ?></p>
             </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
         <div class="col">
             <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Panier moyen</h5>
+                <h5 class="card-title">Panier moyen commandé</h5>
                 <p class="card-text"> <?php
                     $res = $bdd->query("SELECT AVG(montant) as nb FROM commande");
                     $data = $res->fetch();
@@ -102,7 +102,22 @@
                     ?> <?= number_format($nb, 2, ',', ' '); ?> €</p>
             </div>
             </div>
-        </div>       
+        </div>
+        <div class="col">
+            <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Article le plus commandé</h5>
+                <p class="card-text"> <?php
+                    $res = $bdd->query("SELECT id_produit as nb FROM detail_commande GROUP BY id_produit ORDER BY COUNT(*) DESC LIMIT 1");
+                    $data = $res->fetch();
+                    $nb = $data['nb'];
+                    $sql = $bdd->prepare("SELECT * FROM produit WHERE id_produit=$nb");
+                    $sql->execute();
+                    $c = $sql->fetch(PDO::FETCH_ASSOC);
+                    ?> <?= $c['titre'] ?></p>
+            </div>
+            </div>
+        </div>        
         </div>
         </div>
     </section>    
