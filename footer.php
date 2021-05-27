@@ -21,7 +21,7 @@
             <div class="contact">
             <h4>Nous contacter</h4>
             <div class="details">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis velit corporis nulla nobis. </p>
+            <p> Vous pouvez nous retrouver ici : </p>
                 <ul class="flex-li">
                     <li> <span> Sushi Island </span></li>
                     <li> <span>10 rue saint honoré</span></li>

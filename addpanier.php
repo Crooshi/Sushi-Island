@@ -2,8 +2,8 @@
     include_once 'header.php';
     require 'includes/db.inc.php';
 
-    $id = $_GET['id'];
-    if(isset($id)){
+    if(isset($_GET['id'])){
+		$id = $_GET['id'];
 	    $requser = $bdd->prepare("SELECT * FROM produit WHERE id_produit = $id");
 	    $requser->execute(array($id));
 	    $produit = $requser->fetch();
